@@ -1,0 +1,29 @@
+{
+  "version": "submission_yolo11s_roi_shared_quality_v1",
+  "detector": "models/detector.pt",
+  "verifier": "models/verifier.pt",
+  "method": "joint_cluster",
+  "imgsz": 640,
+  "raw_floor": 0.001,
+  "output_floor": 0.001,
+  "nms_iou": 0.5,
+  "max_det": 100,
+  "alarm_threshold": 0.2,
+  "review_threshold": 0.02,
+  "automatic_safe_pass": false,
+  "verifier_epoch": 23,
+  "weights_sha256": {
+    "detector.pt": "3acf657915e1e80bc5a88e2b9642eed1960f554ed936e1c6880e5823b9ce08f5",
+    "verifier.pt": "83c84950a8d57c741ff5071cb61895e342f28b20c53a788174b6a2cf4bb441c3",
+    "detector_coco_init.pt": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+    "shared_quality.pt": "281d6d8153bb728a50bec3b13c29cb30726b19d0739000dabf18f860279053b2"
+  },
+  "shared_quality": "models/shared_quality.pt",
+  "pipeline": [
+    "marker_inpainting",
+    "YOLO11s",
+    "OOF_paired_flip_ROI_verifier",
+    "joint_cluster",
+    "shared_quality_coordinate_refinement"
+  ]
+}

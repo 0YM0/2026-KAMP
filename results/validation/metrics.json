@@ -1,0 +1,76 @@
+{
+  "metrics": [
+    {
+      "confidence": 0.2,
+      "match_iou": 0.5,
+      "images": 68,
+      "tp": 67,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.9852941176470589,
+      "fp_per_image": 0.0,
+      "images_with_any_miss": 1
+    },
+    {
+      "confidence": 0.2,
+      "match_iou": 0.75,
+      "images": 68,
+      "tp": 26,
+      "fp": 41,
+      "fn": 42,
+      "precision": 0.3880597014925373,
+      "recall": 0.38235294117647056,
+      "fp_per_image": 0.6029411764705882,
+      "images_with_any_miss": 42
+    },
+    {
+      "confidence": 0.02,
+      "match_iou": 0.5,
+      "images": 68,
+      "tp": 68,
+      "fp": 15,
+      "fn": 0,
+      "precision": 0.8192771084337349,
+      "recall": 1.0,
+      "fp_per_image": 0.22058823529411764,
+      "images_with_any_miss": 0
+    },
+    {
+      "confidence": 0.02,
+      "match_iou": 0.75,
+      "images": 68,
+      "tp": 26,
+      "fp": 57,
+      "fn": 42,
+      "precision": 0.3132530120481928,
+      "recall": 0.38235294117647056,
+      "fp_per_image": 0.8382352941176471,
+      "images_with_any_miss": 42
+    }
+  ],
+  "ap": {
+    "map50": 0.9947142857142858,
+    "map50_95": 0.42532518036221056,
+    "ap_by_iou": [
+      0.9947142857142858,
+      0.9811385927505331,
+      0.8314435564435563,
+      0.6522974438179041,
+      0.49570645969436095,
+      0.21466358641358646,
+      0.06304545454545454,
+      0.01924242424242424,
+      0.001,
+      0.0
+    ],
+    "note": "YOLO11s + paired-flip ROI + joint_cluster + shared-quality coordinate refinement; square640, floor.001; official Ultralytics AP matching."
+  },
+  "frozen_weights": {
+    "detector.pt": "3acf657915e1e80bc5a88e2b9642eed1960f554ed936e1c6880e5823b9ce08f5",
+    "verifier.pt": "83c84950a8d57c741ff5071cb61895e342f28b20c53a788174b6a2cf4bb441c3",
+    "detector_coco_init.pt": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+    "shared_quality.pt": "281d6d8153bb728a50bec3b13c29cb30726b19d0739000dabf18f860279053b2"
+  },
+  "previous_test_exposure": null
+}

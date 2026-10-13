@@ -1,0 +1,109 @@
+{
+  "version": "capture_split_v1",
+  "scope": "Unobserved capture dates of recurring fixture/specimen families; not new-product generalization",
+  "stats": {
+    "train": {
+      "images": 360,
+      "boxes": 997,
+      "cameras": {
+        "3": 141,
+        "1": 119,
+        "2": 100
+      },
+      "box_count_categories": {
+        "3": 318,
+        "1": 41,
+        "2": 1
+      },
+      "dimensions": {
+        "576x444": 141,
+        "352x332": 119,
+        "316x332": 100
+      },
+      "dates": [
+        "20200622",
+        "20200623",
+        "20200624",
+        "20200625",
+        "20200629",
+        "20200714",
+        "20200728",
+        "20200810",
+        "20200811",
+        "20200814",
+        "20200819"
+      ],
+      "capture_groups": 7,
+      "small_min_side_lt8_images": 73
+    },
+    "validation": {
+      "images": 68,
+      "boxes": 68,
+      "cameras": {
+        "3": 13,
+        "2": 38,
+        "1": 17
+      },
+      "box_count_categories": {
+        "1": 68
+      },
+      "dimensions": {
+        "576x444": 13,
+        "316x332": 55
+      },
+      "dates": [
+        "20200821",
+        "20200826",
+        "20200831",
+        "20200901",
+        "20200906",
+        "20200907"
+      ],
+      "capture_groups": 5,
+      "small_min_side_lt8_images": 3
+    },
+    "test": {
+      "images": 72,
+      "boxes": 82,
+      "cameras": {
+        "3": 13,
+        "1": 20,
+        "2": 39
+      },
+      "box_count_categories": {
+        "1": 67,
+        "3": 5
+      },
+      "dimensions": {
+        "576x444": 13,
+        "352x332": 5,
+        "316x332": 54
+      },
+      "dates": [
+        "20200715",
+        "20200727",
+        "20200815",
+        "20200818",
+        "20200904",
+        "20200905",
+        "20200922"
+      ],
+      "capture_groups": 7,
+      "small_min_side_lt8_images": 4
+    }
+  },
+  "all_dates_and_capture_groups_disjoint": true,
+  "all_strict_near_frame_links_same_split": true,
+  "preprocessing_tuning_sources_in_train": true,
+  "independent_product_generalization_claim": false,
+  "broad_scene_crossing_links": 1143,
+  "strict_near_frame_links": 299,
+  "capture_groups": 19,
+  "split_list_sha256": {
+    "train": "a7cf391961d683d4bfe196d038318f629bc2a79f7693f167c1db499fdfd3fa1d",
+    "validation": "bb21e5afcf7488af7ddbbdb1666f583320ddc9288dcf7e1f35ae61c3c222289d",
+    "test": "6dde0e968bb8326b7304dd0252d8124de36db28bfb22f5311fa1ccdfd1bb5e97"
+  },
+  "test_locked_for_model_selection": true,
+  "source_preprocessing_version": "xray_preprocessing_v1"
+}

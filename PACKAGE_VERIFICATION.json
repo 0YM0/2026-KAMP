@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "selected": "YOLO11s + OOF paired-flip ROI + joint_cluster + shared_quality",
+  "raw_images": 500,
+  "official_labels": 500,
+  "split": {
+    "train": 360,
+    "validation": 68,
+    "test": 72
+  },
+  "shared_quality_fit_images": 301,
+  "shared_quality_samples": 86913,
+  "inference_replayed_validation": 68,
+  "inference_replayed_test": 72,
+  "predictions_match_integrated_reference_atol": 1e-06,
+  "shared_quality_retraining_state_tensors_exact": true,
+  "shared_quality_rebuilt_features_exact": true,
+  "unit_tests_passed": 3,
+  "final_weights_unchanged": true,
+  "test_previously_observed": true,
+  "preprocessing_all_500_hash_equal": true,
+  "hashes_labels_splits_prediction_metrics_verified": true,
+  "zip_extracted_relocation_smoke_test": {
+    "passed": true,
+    "working_directory_outside_project": true,
+    "raw_bmp_inference": true,
+    "predictions_match_atol": 1e-06
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "selection": "user_selected_final_submission",
+  "source": "xray_integrated_quality/integrated_project",
+  "previous_automatic_gates_passed": false,
+  "known_multi_additional_misses_at_002": 14,
+  "normal_product_fpr_unknown": true,
+  "test_previously_used_for_baseline_evaluation": true,
+  "final_model_frozen_before_new_test_predictions": true,
+  "shared_quality": "84->64->32->1; epoch48; q>=0.55; deltaq>=0.10"
+}

@@ -1,0 +1,11 @@
+{
+  "version": "capture_split_v1",
+  "scope": "Unobserved capture dates of recurring fixture/specimen families; not new-product generalization",
+  "rationale": "Only current folder available; the large broad similarity families are retained as overlap diagnostics, not claimed independent",
+  "grouping": "all cameras of the same calendar date together; merge dates linked by same-dimension whole corr>=.995 AND product corr>=.995",
+  "tuning": "all dates/groups containing preprocessing pilot source IDs forced to train",
+  "allocation": "Exhaustive two-way partition of untouched groups; target val70/test70; balance camera and box-count categories; use no detector scores",
+  "rule": "Require every camera in both validation and test; deterministic lexicographic tie-break",
+  "validation_use": "model/threshold selection; test list locked until selections complete",
+  "limitation": "Shared scene/fixture family overlap remains; preprocessing was tuned on that broad family; this split is for internal comparison only"
+}

@@ -1,0 +1,9 @@
+* text=auto
+
+# Binary model, feature, and image assets
+*.pt binary
+*.npz binary
+*.bmp binary
+*.png binary
+*.jpg binary
+*.jpeg binary

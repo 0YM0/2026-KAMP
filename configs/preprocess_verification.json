@@ -1,0 +1,12 @@
+{
+  "images": 500,
+  "labels": 500,
+  "boxes": 1147,
+  "outside_mask_changed_images": 0,
+  "center_window_changed_pixels": 0,
+  "center_window_mask_overlap": 0,
+  "source_and_copied_labels_hash_verified": true,
+  "output_pngs_reloaded": true,
+  "elapsed_seconds": 34.65055374999065,
+  "caveat": "5x5 TXT center windows are a limited QA check, not complete foreign-object preservation proof"
+}

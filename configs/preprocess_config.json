@@ -1,0 +1,42 @@
+{
+  "version": "xray_preprocessing_v1",
+  "candidate": "adaptive_g10",
+  "method": "adaptive",
+  "gain": 1.0,
+  "color_threshold": 10,
+  "mask_dilation": 0,
+  "seed": 20261006,
+  "gray_conversion": "cv2.COLOR_RGB2GRAY",
+  "output": "uint8 grayscale PNG, original dimensions, original official TXT bytes",
+  "trend_sigma": 1.2,
+  "residual_sigma": "1.4826 MAD",
+  "rho_bounds": [
+    -0.35,
+    0.6
+  ],
+  "observations_cap": 192,
+  "conditional_covariance_regularization": 0.0001,
+  "conditional_covariance_jitter": 1e-06,
+  "structural_mean": "harmonic: <=400 iterations, tolerance .01, ROI margin2",
+  "innovation_clip_sigma": 2.0,
+  "edge_scale_sigma": 3.0,
+  "edge_power": 4,
+  "compact_dark_threshold": "max(8,4 sigma)",
+  "compact_dark_neighbor_distance": 2,
+  "compact_dark_required_directions": 3,
+  "compact_dark_max_area": 9,
+  "compact_dark_guard_radius": 3,
+  "fallback": "harmonic when observed ring has <12 samples or residual sigma<.25",
+  "pilot": "adaptive_pilot_v4",
+  "code_sha256": {
+    "xray_texture_processing.py": "74ec02de5228f7157f0c3950c4f41e3c282008d0fa028c8e3f6cfeb70e5ed7e3",
+    "xray_marker_processing.py": "374f30a55551bc964618ee2ad56200e2a42a5ae186b94e496179932bb21537c9",
+    "freeze_xray_preprocessing.py": "632bb1d42a780759af1054b70126e62ea5868b34b01ec680453273acd468f208"
+  },
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "opencv": "5.0.0",
+  "split_status": "existing date split is provisional until similar-scene leakage audit",
+  "detector_validated": false,
+  "universal_marker_trace_absence_verified": false
+}

@@ -1,0 +1,10 @@
+{
+  "images": 500,
+  "boxes": 1147,
+  "unique_ids": true,
+  "lists_match_manifest": true,
+  "dates_and_groups_disjoint": true,
+  "tuning_sources_in_train": true,
+  "image_label_paths_and_counts_verified": true,
+  "scope": "capture benchmark only"
+}

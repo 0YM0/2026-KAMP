@@ -1,0 +1,8 @@
+{
+  "epochs": 48,
+  "fit_images": 301,
+  "fit_candidates": 86913,
+  "seconds": 2.154531624983065,
+  "checkpoint_sha256": "281d6d8153bb728a50bec3b13c29cb30726b19d0739000dabf18f860279053b2",
+  "last_epoch_fixed": true
+}
